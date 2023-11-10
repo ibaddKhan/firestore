@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      li {
+        list-style: none;
+      }
+    </style>
   </head>
-  <body>
-    <!-- login -->
-    <form action="">
-      <input type="text" class="email" />
-      <input type="text" class="pass" />
-      <button type="submit">Sub</button>
-    </form>
+  <body class="flex flex-col">
+    <h1 class="ml-5 text-5xl font-black flex align-center my-4">
+      Save Anything
+    </h1>
+    <div class="mt-5 ml-3">
+      <form class="border inline p-10">
+        <input type="text" class="email rounded-sm border-stone-600 border-2" />
+        <input type="text" class="pass rounded-sm border-stone-600 border-2" />
+
+        <a
+          href="#"
+          class="inline-flex update items-center px-2 py-1 mb-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          <button type="submit">Send</button>
+        </a>
+      </form>
+    </div>
+
+    <div class="main"></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <script type="module" src="app.js"></script>
   </body>
 </html>
