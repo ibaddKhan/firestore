@@ -18,7 +18,7 @@ let arr = [];
 
 function renderData() {
   div.innerHTML = "";
-  arr.forEach((item) => {
+  arr.map((item) => {
     div.innerHTML += `<div
     class="max-w-sm mt-20 ml-10 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
   >
